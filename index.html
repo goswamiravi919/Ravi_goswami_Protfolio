@@ -1,1 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ravi Goswami Portfolio</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f2f4f7;
+      color:#333;
+    }
+
+    .container{
+      width:1100px;
+      max-width:95%;
+      margin:30px auto;
+      display:flex;
+      background:#fff;
+      box-shadow:0 0 20px rgba(0,0,0,0.1);
+      border-radius:12px;
+      overflow:hidden;
+    }
+
+    /* LEFT SIDE */
+
+    .left{
+      width:32%;
+      background:#214c8d;
+      color:#fff;
+      padding:30px 25px;
+      text-align:center;
+    }
+
+    .profile-img{
+      width:180px;
+      height:180px;
+      border-radius:50%;
+      border:6px solid #fff;
+      object-fit:cover;
+      margin:20px auto;
+      display:block;
+    }
+
+    .left h1{
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    .title{
+      font-size:16px;
+      color:#dbe7ff;
+      margin-bottom:30px;
+    }
+
+    .section{
+      margin-top:35px;
+      text-align:left;
+    }
+
+    .section h2{
+      font-size:22px;
+      margin-bottom:15px;
+      border-bottom:2px solid rgba(255,255,255,0.3);
+      padding-bottom:8px;
+    }
+
+    .info{
+      margin-bottom:12px;
+      line-height:1.6;
+      font-size:15px;
+    }
+
+    .skill{
+      margin-bottom:18px;
+    }
+
+    .skill-name{
+      margin-bottom:6px;
+    }
+
+    .bar{
+      background:#fff;
+      height:8px;
+      border-radius:10px;
+      overflow:hidden;
+    }
+
+    .fill{
+      height:100%;
+      background:#87b3ff;
+    }
+
+    /* RIGHT SIDE */
+
+    .right{
+      width:68%;
+      padding:40px;
+    }
+
+    .right-section{
+      margin-bottom:40px;
+    }
+
+    .right-section h2{
+      font-size:30px;
+      color:#214c8d;
+      margin-bottom:20px;
+      border-bottom:2px solid #ddd;
+      padding-bottom:10px;
+    }
+
+    .right-section p{
+      line-height:1.8;
+      font-size:16px;
+    }
+
+    .edu-box,
+    .intern-box{
+      margin-bottom:25px;
+    }
+
+    .edu-box h3,
+    .intern-box h3{
+      font-size:20px;
+      margin-bottom:6px;
+      color:#222;
+    }
+
+    .edu-box span,
+    .intern-box span{
+      color:#666;
+      font-size:15px;
+    }
+
+    ul{
+      padding-left:20px;
+    }
+
+    ul li{
+      margin-bottom:10px;
+      font-size:16px;
+    }
+
+    .btns{
+      margin-top:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:12px 24px;
+      background:#214c8d;
+      color:#fff;
+      text-decoration:none;
+      border-radius:8px;
+      margin-right:10px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#163665;
+    }
+
+    @media(max-width:900px){
+
+      .container{
+        flex-direction:column;
+      }
+
+      .left,
+      .right{
+        width:100%;
+      }
+
+      .right{
+        padding:25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- LEFT SIDE -->
+
+    <div class="left">
+
+      <h1>GOSWAMI RAVI</h1>
+      <div class="title">Python Developer Fresher</div>
+
+      <!-- IMAGE -->
+      <img src="profile.jpg" alt="Ravi Image" class="profile-img">
+
+      <!-- PERSONAL DETAILS -->
+
+      <div class="section">
+        <h2>Personal Details</h2>
+
+        <div class="info">
+          📧 goswamiravi919@gmail.com
+        </div>
+
+        <div class="info">
+          📞 9978497489
+        </div>
+
+        <div class="info">
+          📍 Lalpark Society, Ahir Chowk,<br>
+          Rajkot - 360001
+        </div>
+
+        <div class="info">
+          🌍 Indian
+        </div>
+      </div>
+
+      <!-- SKILLS -->
+
+      <div class="section">
+        <h2>Skills</h2>
+
+        <div class="skill">
+          <div class="skill-name">HTML & CSS</div>
+          <div class="bar">
+            <div class="fill" style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Python Programming</div>
+          <div class="bar">
+            <div class="fill" style="width:75%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">Website Development</div>
+          <div class="bar">
+            <div class="fill" style="width:70%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <div class="skill-name">MS Office & Excel</div>
+          <div class="bar">
+            <div class="fill" style="width:80%"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- LANGUAGES -->
+
+      <div class="section">
+        <h2>Languages</h2>
+
+        <div class="info">English</div>
+        <div class="info">Hindi</div>
+        <div class="info">Gujarati</div>
+      </div>
+
+      <!-- HOBBIES -->
+
+      <div class="section">
+        <h2>Hobbies</h2>
+
+        <div class="info">✔ Coding</div>
+        <div class="info">✔ Programming</div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right">
+
+      <!-- ABOUT -->
+
+      <div class="right-section">
+        <h2>About Me</h2>
+
+        <p>
+          Recent graduate with a strong foundation in Python programming,
+          HTML, CSS and website development. Quick learner with problem-solving
+          abilities and adaptability. Seeking a challenging role to contribute
+          effectively as a fresher Python developer.
+        </p>
+
+        <div class="btns">
+          <a href="#" class="btn">Hire Me</a>
+          <a href="#" class="btn">Download CV</a>
+        </div>
+      </div>
+
+      <!-- EDUCATION -->
+
+      <div class="right-section">
+        <h2>Education</h2>
+
+        <div class="edu-box">
+          <h3>SSC - GSEB Board</h3>
+          <span>Vipi Zala High School | 2019</span>
+        </div>
+
+        <div class="edu-box">
+          <h3>HSC - HSEEB Board</h3>
+          <span>Vipi Zala High School | 2021</span>
+        </div>
+
+        <div class="edu-box">
+          <h3>BSC IT - Bachelor of Science in Information Technology</h3>
+          <span>Geetanjali Group of Colleges, Rajkot | 2025</span>
+        </div>
+      </div>
+
+      <!-- INTERNSHIP -->
+
+      <div class="right-section">
+        <h2>Internship</h2>
+
+        <div class="intern-box">
+          <h3>OM Computer Classic</h3>
+          <span>6 Month Internship | Rajkot</span>
+        </div>
+      </div>
+
+      <!-- EXPERIENCE -->
+
+      <div class="right-section">
+        <h2>Experience</h2>
+
+        <ul>
+          <li>4 Months self-learning experience in programming.</li>
+          <li>6 Months professional classes completed.</li>
+          <li>Fresher in Python Language.</li>
+        </ul>
+      </div>
+
+      <!-- PROJECTS -->
+
+      <div class="right-section">
+        <h2>Projects</h2>
+
+        <ul>
+          <li>Personal Portfolio Website</li>
+          <li>Python Basic Projects</li>
+          <li>Responsive Web Design</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
